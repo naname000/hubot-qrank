@@ -2,7 +2,7 @@
 
 Posts qiita articles from qrank.
 
-See [`src/hubot-qiita.coffee`](src/hubot-qiita.coffee) for full documentation.
+See [`src/hubot-qiita.js`](src/hubot-qiita.js) for full documentation.
 
 ## Installation
 
