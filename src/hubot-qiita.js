@@ -20,7 +20,7 @@ module.exports = function(robot) {
   robot.respond(/hello/, function(res) {
     return res.reply("hello!");
   });
-  return robot.hear(/orly/, function(res) {
+  robot.hear(/orly/, function(res) {
     return res.send("yarly");
   });
 };
