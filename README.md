@@ -1,4 +1,4 @@
-# hubot-hubot-qiita
+# hubot-qiita
 
 Posts qiita articles from qrank.
 
@@ -10,11 +10,11 @@ In hubot project repo, run:
 
 `npm install hubot-hubot-qiita --save`
 
-Then add **hubot-hubot-qiita** to your `external-scripts.json`:
+Then add **hubot-qiita** to your `external-scripts.json`:
 
 ```json
 [
-  "hubot-hubot-qiita"
+  "hubot-qiita"
 ]
 ```
 
@@ -27,4 +27,4 @@ hubot>> hello!
 
 ## NPM Module
 
-https://www.npmjs.com/package/hubot-hubot-qiita
+https://www.npmjs.com/package/hubot-qiita

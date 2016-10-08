@@ -1,5 +1,5 @@
 {
-  "name": "hubot-hubot-qiita",
+  "name": "hubot-qiita",
   "description": "Posts qiita articles from qrank.",
   "version": "0.0.0",
   "author": "naname <naname@naname.net>",
@@ -7,10 +7,10 @@
   "keywords": "hubot-scripts",
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-hubot-qiita.git"
+    "url": "git://github.com/hubot-scripts/hubot-qiita.git"
   },
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-hubot-qiita/issues"
+    "url": "https://github.com/hubot-scripts/hubot-qiita/issues"
   },
   "dependencies": {},
   "peerDependencies": {
