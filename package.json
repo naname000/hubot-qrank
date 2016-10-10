@@ -1,25 +1,30 @@
 {
-  "name": "hubot-qiita",
-  "description": "Posts qiita articles from qrank.",
+  "name": "hubot-qrank",
+  "description": "Posting to Slack qiita articles from qrank.",
   "version": "0.0.0",
   "author": "naname <naname@naname.net>",
   "license": "MIT",
   "keywords": "hubot-scripts",
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-qiita.git"
+    "url": "git://github.com/naname000/hubot-qrank.git"
   },
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-qiita/issues"
+    "url": "https://github.com/naname000/hubot-qrank/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "qrank-crawler": "naname000/qrank-crawler"
+  },
   "peerDependencies": {
     "hubot": "2.x"
   },
   "devDependencies": {
+    "babel-preset-es2015": "^6.16.0",
+    "babel-register": "^6.16.3",
     "chai": "^2.1.1",
-    "coffee-script": "1.6.3",
+    "coffee-script": "^1.11.1",
     "grunt": "^0.4.5",
+    "grunt-babel": "^6.0.0",
     "grunt-cli": "^0.1.13",
     "grunt-contrib-watch": "~0.6.1",
     "grunt-mocha-test": "~0.12.7",
@@ -27,7 +32,7 @@
     "hubot": "2.x",
     "hubot-test-helper": "^1.5.0",
     "matchdep": "~0.3.0",
-    "mocha": "^2.1.0",
+    "mocha": "^3.1.0",
     "sinon": "^1.13.0",
     "sinon-chai": "^2.7.0"
   },

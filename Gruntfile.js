@@ -1,15 +1,14 @@
 'use strict';
 
 module.exports = function (grunt) {
-
   grunt.initConfig({
     mochaTest: {
       test: {
         options: {
           reporter: 'spec',
-          require: 'coffee-script'
+          require: 'babel-register'
         },
-        src: ['test/**/*.coffee', 'test/**/*.js']
+        src: ['test/**/*.js']
       }
     },
     release: {
@@ -19,8 +18,19 @@ module.exports = function (grunt) {
       }
     },
     watch: {
-      files: ['Gruntfile.js', 'src/**/*.coffee', 'test/**/*.coffee', 'src/**/*.js', 'test/**/*.js'],
+      files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
       tasks: ['test']
+    },
+    babel: {
+      options: {
+        sourceMap: true,
+        presets: ['es2015']
+      },
+      dist: {
+        files: {
+          './dist/hubot-qrank.js': './src/hubot-qrank.js'
+        }
+      }
     }
   });
 
